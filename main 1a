@@ -1,0 +1,29 @@
+
+package com.mycompany.thtuan2;
+import java.util.Scanner;
+import com.mycompany.thtuan2.Thtuan2;
+public class main {
+ 
+    public static void main(String[] args) {
+       
+
+
+    Scanner scanner = new Scanner(System.in);
+
+    // Nhập thông tin cho tài khoản
+    System.out.print("Nhap So Tai Khoan: ");
+    int soTaiKhoan = scanner.nextInt();
+    scanner.nextLine(); // Bỏ qua ký tự newline trong bộ đệm
+    System.out.print("Nhap Ten Tai Khoan: ");
+    String tenTaiKhoan = scanner.nextLine();
+    System.out.print("Nhap So Tien Trong Tai Khoan: ");
+    double tienTrongTaiKhoan = scanner.nextDouble();
+
+    // Tạo đối tượng tài khoản từ thông tin đã nhập
+    Thtuan2  tk = new Thtuan2 (soTaiKhoan, tenTaiKhoan, tienTrongTaiKhoan);
+
+    // In thông tin tài khoản
+    System.out.println(tk);
+}
+
+}
